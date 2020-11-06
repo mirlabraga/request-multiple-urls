@@ -1,0 +1,16 @@
+{
+  "name": "request-multiple-urls",
+  "version": "1.0.0",
+  "description": "The request-multiple-urls module helps fetch arrays of URLs",
+  "main": "request-multiple-urls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fetch",
+    "arrays",
+    "urls"
+  ],
+  "author": "Mirla Braga Chucre <mirla.braga@gmail.com>",
+  "license": "ISC"
+}
