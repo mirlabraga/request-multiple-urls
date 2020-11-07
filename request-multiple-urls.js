@@ -1,5 +1,4 @@
 const https = require('https');
-const { ValidationError } = require("./validation-error");
 
 async function requestMultipleUrls (urls) {
   let data = [];
@@ -7,7 +6,7 @@ async function requestMultipleUrls (urls) {
     const contents = await httpsGet(url);
     data.push(contents);
   }));
-  return data;
+  return eval(data);
 }
 
 const httpsGet = url => {

@@ -4,7 +4,7 @@
   "description": "The request-multiple-urls module helps fetch arrays of URLs",
   "main": "request-multiple-urls.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "fetch",
@@ -12,5 +12,8 @@
     "urls"
   ],
   "author": "Mirla Braga Chucre <mirla.braga@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
