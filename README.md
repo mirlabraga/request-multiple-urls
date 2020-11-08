@@ -37,7 +37,7 @@ requestMultipleUrls(urls).then(urlContent => {
 
 ## Response example
 
-```JSON
+```javascript
 {
   success: [
     {
