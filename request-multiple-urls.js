@@ -25,8 +25,7 @@ async function requestMultipleUrls (urls) {
 
   data.success = results.filter(result => result.data !== null);
   data.error = results.filter(result => result.data === null);
-
-  return eval(data);
+  return data;
 }
 
 const httpsGet = url => {

@@ -9,10 +9,7 @@ const urls = [
 
 requestMultipleUrls(urls).then(urlContent => {
   console.log(urlContent);
-  // console.log(urlContent.success);
-  // urlContent.sucess.forEach(element => {
-  //   console.log(element);
-  // });
+  urlContent.success.forEach(element => {
+    console.log(JSON.stringify(element.data, 2, null));
+  });
 })
-
-//'https://ft-tech-test.s3-eu-west-1.amazonaws.com/ftse-fsi.json',
