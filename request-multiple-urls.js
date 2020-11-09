@@ -1,4 +1,5 @@
 const https = require('https');
+const http = require('http');
 
 async function requestMultipleUrls (urls) {
   let data = new Object();
@@ -30,7 +31,8 @@ async function requestMultipleUrls (urls) {
 
 const httpsGet = url => {
   return new Promise((resolve, reject) => {
-    https.get(url, res => {
+    const requester = url.toUpperCase().startsWith('HTTPS') ? https : http;
+    requester.get(url, res => {
       let body = '';
       res.on('data', chunk => body += chunk);
       res.on('end', () => resolve(body));
