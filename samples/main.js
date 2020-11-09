@@ -8,8 +8,12 @@ const urls = [
 ];
 
 requestMultipleUrls(urls).then(urlContent => {
-  console.log(urlContent);
+  console.log(JSON.stringify(urlContent));
   urlContent.success.forEach(element => {
     console.log(JSON.stringify(element.data, 2, null));
   });
+
+  urlContent.error.forEach(element => {
+    console.log(JSON.stringify(element, 2, null));
+  })
 })
