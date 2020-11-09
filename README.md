@@ -13,7 +13,9 @@ Request Multiple URL's is responsible for doing the fetch of URL and response wi
 Use the package manager [npm](https://www.npmjs.com/) to install request-multiple-urls.
 
 ```bash
-npm install --save request-multiple-urls
+$ unzip request-multiple-urls.zip
+$ cd request-multiple-urls
+$ npm install
 ```
 
 ## Usage
